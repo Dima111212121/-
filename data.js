@@ -1,7 +1,7 @@
 // data.js
 
 const cheatsheetData = [
-    // ======= HTML (30) =======
+    // ======= HTML (42) =======
     {
     category: "html",
     title: "Заголовок (h1)",
@@ -152,8 +152,80 @@ const cheatsheetData = [
     description: "Відтворення відео.",
     code: `<video src="video.mp4" controls></video>`
     },
+    {
+        category: "html",
+        title: "Сильне (strong)",
+        description: "Виділення важливого жирного тексту.",
+        code: `<strong>Важливо</strong>`
+    },
+    {
+        category: "html",
+        title: "Курсивне (em)",
+        description: "Виділення важливого курсивного тексту.",
+        code: `<em>Курсив</em>`
+    },
+    {
+        category: "html",
+        title: "Жирне (b)",
+        description: "Простий жирний текст (без семантики).",
+        code: `<b>Жирний</b>`
+    },
+    {
+        category: "html",
+        title: "Курсив (i)",
+        description: "Простий курсивний текст (без семантики).",
+        code: `<i>Курсив</i>`
+    },
+    {
+        category: "html",
+        title: "Маркер (mark)",
+        description: "Виділення тексту маркером (жовтим).",
+        code: `<mark>Виділено</mark>`
+    },
+    {
+        category: "html",
+        title: "Малий текст (small)",
+        description: "Менший шрифт для приміток.",
+        code: `<small>Примітка</small>`
+    },
+    {
+        category: "html",
+        title: "Цитата (blockquote)",
+        description: "Велика блокова цитата.",
+        code: `<blockquote>Це велика цитата</blockquote>`
+    },
+    {
+        category: "html",
+        title: "Цитата коротка (q)",
+        description: "Коротка вбудована цитата.",
+        code: `<p>Він сказав <q>Привіт</q></p>`
+    },
+    {
+        category: "html",
+        title: "Код (code)",
+        description: "Виділення коду в тексті.",
+        code: `<code>console.log('Hello')</code>`
+    },
+    {
+        category: "html",
+        title: "Форматований текст (pre)",
+        description: "Текст збережений з форматуванням.",
+        code: `<pre>\n  Hello\n  World\n</pre>`
+    },
+    {
+        category: "html",
+        title: "Деталі/спойлер (details/summary)",
+        description: "Блок, що розкривається по кліку.",
+        code: `<details>\n  <summary>Деталі</summary>\n  <p>Прихована інформація</p>\n</details>`
+    },
+    {
+        category: "html",
+        title: "Список термінів (dl/dt/dd)",
+        description: "Список термінів та описів.",
+        code: `<dl>\n  <dt>HTML</dt>\n  <dd>Мова розмітки</dd>\n</dl>`
+    },    
     
-    // ======= CSS (30) =======
+    // ======= CSS (43) =======
     {
     category: "css",
     title: "Колір тексту (color)",
@@ -328,6 +400,84 @@ const cheatsheetData = [
         description: "Встановити фонове зображення.",
         code: `body {\n  background-image: url(bg.jpg);\n}`
         },
+        {
+            category: "css",
+            title: "Мінімальна ширина (min-width)",
+            description: "Встановити мінімальну ширину елемента.",
+            code: `div {\n  min-width: 200px;\n}`
+        },
+        {
+            category: "css",
+            title: "Максимальна ширина (max-width)",
+            description: "Встановити максимальну ширину елемента.",
+            code: `div {\n  max-width: 800px;\n}`
+        },
+        {
+            category: "css",
+            title: "Мінімальна висота (min-height)",
+            description: "Встановити мінімальну висоту елемента.",
+            code: `div {\n  min-height: 100px;\n}`
+        },
+        {
+            category: "css",
+            title: "Максимальна висота (max-height)",
+            description: "Встановити максимальну висоту елемента.",
+            code: `div {\n  max-height: 500px;\n}`
+        },
+        {
+            category: "css",
+            title: "Підгонка зображення (object-fit)",
+            description: "Як зображення заповнює контейнер.",
+            code: `img {\n  object-fit: cover;\n}`
+        },
+        {
+            category: "css",
+            title: "Повторення фону (background-repeat)",
+            description: "Керує повторенням фонового зображення.",
+            code: `body {\n  background-repeat: no-repeat;\n}`
+        },
+        {
+            category: "css",
+            title: "Позиція фону (background-position)",
+            description: "Керує позицією фонового зображення.",
+            code: `body {\n  background-position: center center;\n}`
+        },
+        {
+            category: "css",
+            title: "Фіксований фон (background-attachment)",
+            description: "Робить фон нерухомим при прокручуванні.",
+            code: `body {\n  background-attachment: fixed;\n}`
+        },
+        {
+            category: "css",
+            title: "Стиль списку (list-style)",
+            description: "Керує маркерами списку.",
+            code: `ul {\n  list-style: square;\n}`
+        },
+        {
+            category: "css",
+            title: "Контур (outline)",
+            description: "Обводка елемента без зсуву.",
+            code: `button {\n  outline: 2px solid red;\n}`
+        },
+        {
+            category: "css",
+            title: "Обрізання фігурою (clip-path)",
+            description: "Обрізає елемент за формою.",
+            code: `div {\n  clip-path: circle(50%);\n}`
+        },
+        {
+            category: "css",
+            title: "Співвідношення сторін (aspect-ratio)",
+            description: "Фіксує пропорції елемента.",
+            code: `div {\n  aspect-ratio: 16 / 9;\n}`
+        },
+        {
+            category: "css",
+            title: "Фільтр зображення (filter: grayscale)",
+            description: "Робить зображення чорно-білим.",
+            code: `img {\n  filter: grayscale(100%);\n}`
+        },        
         
         // ======= JavaScript (30) =======
         {

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя шпаргалка HTML + CSS +JS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
+    <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+    <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" disabled>
+
+
+
+</head>
+<body>
+    <header> <!--Верх сайта с названием-->
+        <h1>📚 Шпаргалка HTML + CSS + JavaScript</h1>
+    </header>
+    <nav> <!--Для кнопок-->
+        <button id="btn-html" onclick="showCategory('html')">HTML</button>
+        <button id="btn-css" onclick="showCategory('css')">CSS</button>
+        <button id="btn-js" onclick="showCategory('js')">JavaScript</button>
+        <button onclick="toggleTheme()">🌓 Змінити тему</button>
+    </nav>
+    <section>
+        <input type="text" id="searchInput" placeholder="🔍 Пошук... (наприклад: таблиці)" oninput="searchHints()">
+        <div id="results"></div>
+    </section>
+
+    <footer>
+        Вікуся ✌️ | Шпаргалка 2025
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
+</body>
+</html>
